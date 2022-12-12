@@ -129,7 +129,7 @@ const hostConfig =  {
   },
 
   detachDeletedInstance() {
-    
+
   }
 }
 

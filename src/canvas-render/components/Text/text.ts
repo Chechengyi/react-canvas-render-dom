@@ -24,7 +24,6 @@ export default function TextInstance(text: string, props: textProps) {
 
 export function updateText(instance: fabric.Text, props: textProps, text: string) {
   const { parentTop, parentLeft, fontSize = 12, textColor } = props;
-  instance.text = text;
   instance.set({
     top: parentTop,
     left: parentLeft,
@@ -32,4 +31,5 @@ export function updateText(instance: fabric.Text, props: textProps, text: string
     fill: textColor,
     selectable: false,
   })
+  instance.text = text;
 }
